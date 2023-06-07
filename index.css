@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+body{
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+main{
+    display: flex;
+    /* justify-content: cd; */
+    height: 100vh;
+   
+}
+
+.navbar{
+    background-color: rgba(215, 213, 213, 0.77);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+}
+
+.titre{
+    margin-left: 100px;
+   
+}
+
+ul{
+    display: flex;
+    flex-direction: row;
+    
+    list-style: none;
+    gap: 20px;
+    font-size: large;
+    margin-right: 100px;
+}
+
+.photoProfil{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 0 #7135db;
+    animation: pulse 3s infinite;
+
+    float: left;
+    shape-outside: margin-box;
+    margin: 70px 100px 50px 0;
+
+}
+
+.container{
+   
+    width: 700px;
+    margin-left: 250px;
+}
+ p{
+    width: 900px;
+    font-size: 20Px;
+ }
+
+
+
+
+
+@keyframes pulse {
+    to {
+        box-shadow: 0 0 0 30px rgba(0 ,0 ,0 , 0.01);
+    }
+
+    50% {
+        transform: translateY(-40px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+   
+}
+
+.home{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    margin-top: 10%;
+    width: 60%;
+  
+
+    
+}
+
+.pP{
+    display: flex;
+    flex-direction: column;
+
+}
+
+/* .pP ::after{
+
+    content: "";
+    display: block;
+    clear: both;
+} */
+
+.icone{
+    display: flex;
+    flex-direction: row;
+    gap: 100px;
+    margin-left: 550Px;
+    font-size: 40px;
+    color: #7135db;
+    margin-bottom: 140px;
+   
+}
+
+.fa-brands{
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 10px rgb(91, 89, 89);
+    background-color: rgba(240, 248, 255, 0.065);
+    transition: all 200ms ease-in-out;
+    
+
+}
+
+.fa-brands:hover{
+
+    transform: scale(1.09);
+}
+
+.fa-solid{
+
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 20%;
+    box-shadow: 10px 10px 10px rgb(91, 89, 89);
+    transition: all 200ms ease-in-out;
+}
+
+.fa-solid:hover{
+    transform: scale(1.09);
+}
+
+.marwan{
+    font-size: 20px;
+    font-weight: bold;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+html{
+
+    scroll-behavior: smooth;
+
+}
+
+#aboutme{
+
+    background-color: rgba(156, 154, 154, 0.256);
+    height: 100vh;
+   
+}
+
