@@ -3,12 +3,15 @@
 body{
     margin: 0px;
     font-family: 'Open Sans', sans-serif;
+    
 
 }
 main{
     display: flex;
-    /* justify-content: cd; */
+   align-items: center;
+   justify-content: center;
     height: 100vh;
+    width: 100%;
    
 }
 
@@ -51,11 +54,12 @@ ul{
 }
 
 .container{
+    /* background-color: salmon; */
    
-    width: 700px;
-    margin-left: 250px;
+    /* width: 700px; */
+    /* margin-left: 250px; */
 }
- p{
+ .premierPara{
     width: 900px;
     font-size: 20Px;
  }
@@ -80,11 +84,14 @@ ul{
 }
 
 .home{
+    height: 100vh;
     display: flex;
-    justify-content:space-between;
+    justify-content:center;
     flex-direction: column;
-    margin-top: 10%;
-    width: 60%;
+    /* margin-top: 10%; */
+    width: 100%;
+    align-items: center;
+    
   
 
     
@@ -105,20 +112,55 @@ ul{
 
 .icone{
     display: flex;
-    flex-direction: row;
-    gap: 100px;
-    margin-left: 550Px;
+    align-items: center;
+    width: 100%;
+    justify-content: center;
     font-size: 40px;
     color: #7135db;
-    margin-bottom: 140px;
-   
+    /* background-color: red; */
+    margin-top: 75px;
+}
+
+.iconcontainer {
+    display: flex;
+    justify-content: center;
+    /* background-color: salmon; */
+    gap: 130px;
+    width: 100%;
+}
+
+.iconcontainer a {
+    padding: 0 20px;
+}
+
+.boutoncv {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: center; */
+    /* justify-content: center; */
+}
+
+.text {
+    font-size: 17px;
+    margin-top: 15px;
+}
+.bouton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+a{
+    text-decoration: none;
+    color: #7135db;
 }
 
 .fa-brands{
-    border: solid black 1px;
+    border:  black 1px;
     padding: 10px;
     border-radius: 20%;
-    box-shadow: 10px 10px 10px rgb(91, 89, 89);
+    box-shadow: 2px 2px 6px rgb(152, 148, 148);
     background-color: rgba(240, 248, 255, 0.065);
     transition: all 200ms ease-in-out;
     
@@ -127,20 +169,22 @@ ul{
 
 .fa-brands:hover{
 
-    transform: scale(1.09);
+    transform: scale(1.20);
 }
 
 .fa-solid{
 
-    border: solid black 1px;
+    border:  black 1px;
     padding: 10px;
     border-radius: 20%;
-    box-shadow: 10px 10px 10px rgb(91, 89, 89);
+    box-shadow: 2px 2px 6px rgb(152, 148, 148);
     transition: all 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 .fa-solid:hover{
-    transform: scale(1.09);
+    transform: scale(1.20);
 }
 
 .marwan{
@@ -157,8 +201,195 @@ html{
 
 #aboutme{
 
-    background-color: rgba(156, 154, 154, 0.256);
-    height: 100vh;
+    background-color: rgba(245, 248, 245, 0.819);
+    /* height: 100vh; */
+    display: flex;
+    /* margin-left: 10%; */
+    /* align-items: center; */
+    flex-direction: column;
+    padding-top:75px;
    
+    padding-bottom: 50px;
+    
+}
+
+.titleAbout{
+
+    margin-left: 10%;
+   font-size: 25px;
+}
+
+.paraAbout{
+    margin-left: 10%;
+  line-height: 30px;
+  width: 900px;
+  
+}
+
+.paragra{
+    font-size: 14px;
+}
+
+#projects{
+
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+   
+    gap: 60px; 
+    margin-left: 2px;
+    padding: 90px;
+}
+
+.titleProjet{
+    font-size: 20px;
+}
+
+.projectContainer {
+    display: flex;
+
+}
+
+.box{
+
+    border:  black 1px;
+    padding: 100px;
+    border-radius: 20px;
+    box-shadow: 3px 3px 6px rgb(125, 123, 123);
+    transition: all 200ms ease-in-out;
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    margin-bottom: 70px;
+    
+
+}
+
+.box1{
+
+    margin-right: 220px;
+}
+
+
+
+#box1{
+    background-image: url(twitter.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#box1:hover{
+    transform:scale(1.20);
+
+}
+#box2:hover{
+    transform:scale(1.20);
+
+}
+#box3:hover{
+    transform:scale(1.20);
+
+}
+#box4:hover{
+    transform:scale(1.20);
+
+}
+
+
+
+#box2{
+    background-image: url(Capture.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#box3{
+    background-image: url(pui.png);
+    background-position: center;
+    background-size: cover;
+}
+
+#box4{
+    background-image: url(maquette.png);
+    background-position: center;
+    background-size: cover;
+}
+
+
+
+#contact{
+    height: 70vh;
+    background-color: rgba(245, 248, 245, 0.819);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 25px;
+}
+
+#name{
+    padding:10px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 6px rgb(152, 148, 148);
+    width: 300px;
+}
+
+#mail{
+    padding:10px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 6px rgb(152, 148, 148);
+    width: 300px;
+}
+
+#msg{
+    padding:80px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 6px rgb(152, 148, 148);
+    width: 300px;
+}
+
+#btn{
+    padding:10px;
+    border-radius: 10px;
+    border: 1px;
+    box-shadow: 2px 2px 6px rgb(145, 142, 142);
+    width: 300px;
+
+}
+
+#btn:hover{
+    transform:scale(1.05);
+}
+
+.name{
+    margin-right: 115px;
+}
+
+.mail{
+    margin-right: 115px;
+}
+
+
+
+
+
+
+
+
+
+footer{
+    display: flex;
+    justify-content: center;
+    
+}
+
+.footeer{
+    font-size: 10Px;
+    color: rgb(172, 176, 176);
 }
 

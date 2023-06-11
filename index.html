@@ -1,99 +1,176 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-    <link href="index.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous"> -->
+    <link href="index.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script type="text/javascript"
+    src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+  (function(){
+    emailjs.init("DskBJwej2AMv0G4OQ");
+  })();
+</script>
+<script src="./index.js"></script>
 </head>
-<body>
+  <body>
     <header>
-
-        <nav class="navbar">
-          <h1 class="titre">MyPortfolio</h1>
-          <ul>
-            <li>Home</li>
-            <li><a href="#aboutme">About me</a></li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
-        </nav>
-
+      <nav class="navbar">
+        <h1 class="titre">MyPortfolio</h1>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#aboutme">About me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
     </header>
-    
 
     <main>
-        
+      <div class="home" id="home">
+        <div class="container">
+          <img class="photoProfil" src="profil.png" alt="profil" />
 
-        <div class="home">
+          <h2 class="marwan">Bienvenue sur mon portfolio !</h2>
+          <p class="premierPara">
+            Je suis ravi de vous accueillir sur mon site personnel où je partage
+            mes réalisations et mon parcours professionnel. Je suis
+            <span class="marwan">Marwan Oukhaiy</span>, développeur web junior.
+            <br /><br />
+            Ce portfolio est le reflet de mon travail et de mon évolution au fil
+            du temps. Vous y trouverez une sélection soignée de mes projets les
+            plus significatifs, mettant en valeur mes compétences et mon style
+            créatif. <br /><br />
+            Cordialement.
+          </p>
 
-            <!-- <div class="pP">
-                <img class="photoProfil" src="profil.png" alt="profil">
-           
+          <div class="icone">
+            <div class="iconcontainer">
+              <a
+                href="https://www.linkedin.com/in/marwan-oukhaiy/"
+                class="bouton"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin-in"></i>
+                <div class="text">Linkedin</div>
+              </a>
 
-                <div class="icone">
-                    <i class="fa-brands fa-linkedin-in"></i>
-                    <i class="fa-brands fa-github"></i>
-                    <i class="fa-solid fa-download"></i> 
-                </div>
+              <a
+                href="https://github.com/marwan917?tab=repositories"
+                class="bouton"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+                <div class="text">GitHub</div>
+              </a>
 
+              <div class="boutoncv">
+                <a
+                  href="cv_marwan_oukhaiy.pdf"
+                  download
+                  class="bouton"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-download"></i>
+                  <div class="text">Cv</div>
+                </a>
+              </div>
             </div>
-            
-            <div class="descritpion">
-                <p>Bonjour es biensur sur mon portfolio</p>
-                
-            </div> -->
+          </div>
+        </div>
 
-            <div class="container">
-              <img class="photoProfil" src="profil.png" alt="profil">
-           
-                          <h2 class="marwan">Bienvenue sur mon portfolio !</h2>
-                          <p>Je suis ravi de vous accueillir sur mon site personnel où je partage mes 
-                            réalisations et mon parcours professionnel. 
-                            Je suis <span class="marwan">Marwan Oukhaiy</span>, développeur web junior.
-                            <br><br>
-                            Ce portfolio est le reflet de mon travail et de mon évolution au fil du temps. 
-                            Vous y trouverez une sélection soignée de mes projets les plus significatifs, mettant 
-                            en valeur mes compétences et mon style créatif. <br><br>
-                            Cordialement.
-                           
-                                                                                               
-                          </p>
-                          
-            </div>  
-
-              <div class="icone">
+        <!-- <div class="icone">
                   <i class="fa-brands fa-linkedin-in"></i>
                   <i class="fa-brands fa-github"></i>
                   <i class="fa-solid fa-download"></i> 
-              </div>
-
-         
-          
-          
-
-
-        </div>
-        
-
-        <div class="projects">
-            
-        </div>
-        <div class="contact">
-
-        </div>
+              </div> -->
+      </div>
     </main>
+
     <div id="aboutme">
-      <p>k,k,k,</p>
+      <div class="titleAbout">
+        <h2>About me</h2>
+      </div>
 
+      <div class="paraAbout">
+        <p class="paragra">
+          Je suis passionné d'informatique. Actuellement, je suis en formation
+          pour devenir développeur web. J'apprécie énormément l'univers de la
+          programmation et la création de sites internet. J'aime relever des
+          défis et résoudre des problèmes complexes grâce au code. Mon intérêt
+          pour le développement web m'a conduit à acquérir des compétences dans
+          plusieurs langages de programmation tels que  <img src=html.png>  ,  
+          <img src=css.png>  ,
+            <img src=php.png>  , 
+            <img src=javascript.png>  ,  <img src=mysql.png>  ,  <img src=react.png>  ,
+            CSS, JavaScript et
+          PHP. Je suis constamment à l'affût des dernières technologies et des
+          tendances du web pour rester à jour dans mon domaine. Je suis créatif
+          et j'aime imaginer des designs attrayants et des fonctionnalités
+          interactives pour offrir
+        </p>
+      </div>
     </div>
-    
-    <footer>
 
+    <div id="projects">
+
+      <div class="titleProjet">
+        <h2>Mes projets</h2>
+      </div>
+
+      <div class="projectContainer">
+        
+        <div class="box1">
+          <div class="box" id="box1">
+           
+          </div>
+          <div class="box" id="box2">
+           
+          </div>
+        </div>
+        <div class="box2" id>
+          <div class="box" id="box3">
+            
+          </div>
+          <div class="box" id="box4">
+            
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="contact">
+      <h2>Me contacter</h2>
+      <div class="name">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="user_name">
+    </div>
+    <div class="mail">
+        <label for="mail">E-mail :</label>
+        <input type="email" id="mail" name="user_mail">
+    </div>
+    <div>
+        <label for="msg">Message :</label>
+        <textarea id="msg" name="user_message"></textarea>
+    </div>
+    <div>
+      <a href="#" id="btn" onclick="sendMail()"><button>Envoyer</button></a>
+    </div>
+    </div>
+
+    <footer>
+      <p class="footeer">©2023 MyPortfolio. All right reserved.</p>
     </footer>
-    
-</body>
+  </body>
 </html>
