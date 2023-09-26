@@ -104,20 +104,19 @@
 
       <div class="paraAbout">
         <p class="paragra">
-          Je suis passionné d'informatique. Actuellement, je suis en formation
-          pour devenir développeur web. J'apprécie énormément l'univers de la
+          
+          Actuellement, je suis en formation
+          pour devenir développeur web à la web académie d'Epitech. J'apprécie énormément l'univers de la
           programmation et la création de sites internet. J'aime relever des
-          défis et résoudre des problèmes complexes grâce au code. Mon intérêt
-          pour le développement web m'a conduit à acquérir des compétences dans
-          plusieurs langages de programmation tels que  <img src=html.png>  ,  
+          défis et résoudre des problèmes grâce au code. Mon intérêt
+          pour le développement web m'a permis d'acquérir des compétences significatives et j'ai pu réalisé plusieurs projets dans 
+          plusieurs langages de programmation tels qu'en  <img src=html.png>  ,  
           <img src=css.png>  ,
             <img src=php.png>  , 
-            <img src=javascript.png>  ,  <img src=mysql.png>  ,  <img src=react.png>  ,
-            CSS, JavaScript et
-          PHP. Je suis constamment à l'affût des dernières technologies et des
-          tendances du web pour rester à jour dans mon domaine. Je suis créatif
-          et j'aime imaginer des designs attrayants et des fonctionnalités
-          interactives pour offrir
+            <img src=javascript.png>  ,  <img src=mysql.png>  ,  <img src=react.png>  . Je suis actuellement à la recherche d'une opportunité
+             d'alternance dans le 
+            développement web. Mon objectif est de rejoindre une entreprise dynamique où je pourrai mettre en pratique mes 
+            compétences, contribuer à des projets innovants et continuer à apprendre et à évoluer en tant que développeur.
         </p>
       </div>
     </div>
@@ -131,20 +130,35 @@
       <div class="projectContainer">
         
         <div class="box1">
-          <div class="box" id="box1">
-           
+          <div class="card">
+             <div class="box" id="box1">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-090-PAR-1-1-academie-mehdi.rezgui">My Twitter</a>
           </div>
+          </div>
+         
+          <div class="card">
           <div class="box" id="box2">
-           
+                      <a href="https://github.com/EpitechWebAcademiePromo2024/W-SPE-502-PAR-2-2-previously-marwan.oukhaiy">Previously</a>
+                    </div>
+          </div>
+         
+        </div>
+
+        <div class="box2" id>
+        <div class="card"> 
+          <div class="box" id="box3">
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-WEB-502-PAR-2-2-ecommerce-lucas.marie-anne ">E-commerce</a>
+    
           </div>
         </div>
-        <div class="box2" id>
-          <div class="box" id="box3">
-            
+         
+        <div class="card">
+          <div class="box" id="box4"  >
+             <!-- <img src="maquette.png" alt=""> -->
+            <a href="https://github.com/EpitechWebAcademiePromo2024/W-INT-501-PAR-1-1-maquetteintro-marwan.oukhaiy">Maquette</a>
           </div>
-          <div class="box" id="box4">
-            
-          </div>
+        </div>
+         
         </div>
 
       </div>
@@ -153,24 +167,33 @@
     <div id="contact">
       <h2>Me contacter</h2>
       <div class="name">
-        <label for="name">Nom :</label>
-        <input type="text" id="name" name="user_name">
+        <label class="titre2" for="name">Nom</label>
+        <input  class="input"type="text" id="name" name="user_name">
     </div>
-    <div class="mail">
-        <label for="mail">E-mail :</label>
+    <div class="name">
+        <label class="titre2" for="mail">E-mail</label>
         <input type="email" id="mail" name="user_mail">
     </div>
-    <div>
-        <label for="msg">Message :</label>
+    <div id="name2">
+        <label class="titre2" for="msg">Message</label>
         <textarea id="msg" name="user_message"></textarea>
     </div>
-    <div>
-      <a href="#" id="btn" onclick="sendMail()"><button>Envoyer</button></a>
+    <div class="btnSend">
+      <a href="#" id="btn" onclick="sendMail()">Envoyer</a>
     </div>
     </div>
+
 
     <footer>
       <p class="footeer">©2023 MyPortfolio. All right reserved.</p>
     </footer>
+    <script type="text/javascript" src="tilt.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 900,
+      
+      });
+    </script>
   </body>
 </html>

@@ -53,12 +53,7 @@ ul{
 
 }
 
-.container{
-    /* background-color: salmon; */
-   
-    /* width: 700px; */
-    /* margin-left: 250px; */
-}
+
  .premierPara{
     width: 900px;
     font-size: 20Px;
@@ -267,6 +262,8 @@ html{
 
 }
 
+
+
 .box1{
 
     margin-right: 220px;
@@ -290,6 +287,7 @@ html{
 }
 #box3:hover{
     transform:scale(1.20);
+    
 
 }
 #box4:hover{
@@ -300,13 +298,13 @@ html{
 
 
 #box2{
-    background-image: url(Capture.png);
+    background-image: url(Netflix.png);
     background-position: center;
     background-size: cover;
 }
 
 #box3{
-    background-image: url(pui.png);
+    background-image: url(eco.png);
     background-position: center;
     background-size: cover;
 }
@@ -319,12 +317,14 @@ html{
 
 
 
+
+
 #contact{
     height: 70vh;
     background-color: rgba(245, 248, 245, 0.819);
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items:center;
     flex-direction: column;
     gap: 25px;
 }
@@ -359,20 +359,41 @@ html{
     border: 1px;
     box-shadow: 2px 2px 6px rgb(145, 142, 142);
     width: 300px;
+    text-decoration: none;
+    color: black;
+    transition: all 200ms ease-in-out;
+    
+    
+    
 
 }
 
-#btn:hover{
-    transform:scale(1.05);
+.btnSend{
+    transition: all 200ms ease-in-out;
+}
+
+.btnSend:hover{
+    transform: scale(1.20);
 }
 
 .name{
     margin-right: 115px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+ 
+   
+    gap: 15px;
 }
+
 
 .mail{
     margin-right: 115px;
 }
+
+
+
+
 
 
 
@@ -392,4 +413,6 @@ footer{
     font-size: 10Px;
     color: rgb(172, 176, 176);
 }
+
+
 
